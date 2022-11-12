@@ -1,0 +1,56 @@
+.form{
+    p{
+        font-size: 12px;
+        a{
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+    &-group{
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        label{
+            display: block;
+            margin-bottom: 10px;
+
+        }
+        
+        .form-control{
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.363);
+            border-radius: 3px;
+            transition: all .3s;
+            // border: 0.5px solid $bgprimary;
+
+            &:focus{
+                outline: none;
+                border: 1px solid $primary;
+                color: $subtitle;
+                font-family: $defaultfont;
+            }
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 500;
+                color: #3f435879;
+                padding: 10px;
+            }
+        }
+
+
+    }
+    
+}
+.check-group{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    label{
+        font-size: 12px;
+    }
+    input{
+        margin-right: 10px;
+    }
+}

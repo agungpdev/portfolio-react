@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $defaultfont;
+}
+
+$width: 1200;
+$column: 12;
+
+.container {
+  max-width: $width * 1px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $j from 1 through $column {
+  .col#{$j} {
+    width: calc((100% / ($column / $j)) - 3%);
+    margin: 1.5%;
+  }
+}
+
+.ai-center {
+  align-items: center;
+}
+.jc-sbetween {
+  justify-content: space-between;
+}
+.jc-center{
+  justify-content: center;
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  @for $j from 1 through $column {
+    .col#{$j}-desktop2k {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+    .slide-left{
+      animation: slideleft 1s linear forwards;
+      visibility: visible;
+  }
+  @keyframes slideleft {
+      0%{
+          transform: translateX(100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0px);
+          opacity: 1;
+      }
+  }
+  .slide-right{
+      animation: slideright 1s linear forwards;
+      visibility: visible;
+  }
+  @keyframes slideright {
+      0%{
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0px);
+          opacity: 1;
+      }
+  }
+  .slide-top{
+      animation: slidertop 1s linear forwards;
+      visibility: visible;
+  }
+  @keyframes slidertop {
+      0%{
+          transform: translateY(100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateY(0px);
+          opacity: 1;
+      }
+  }
+  .slide-down{
+      animation: sliderdown 1s linear forwards;
+      visibility: visible;
+  }
+  @keyframes sliderdown {
+      0%{
+          transform: translateY(-100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateY(0px);
+          opacity: 1;
+      }
+  }
+  
+  }
+}
+@media screen and (max-width: 1070px) {
+  @for $j from 1 through $column {
+    .col#{$j}-desktop {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  @for $j from 1 through $column {
+    .col#{$j}-laptop {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+    .col-rotate{
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  @for $j from 1 through $column {
+    .col#{$j}-medium {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+    
+
+  }
+}
+@media screen and (max-width: 730px) {
+  @for $j from 1 through $column {
+    .col#{$j}-tablet {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+
+    .land-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  @for $j from 1 through $column {
+    .col#{$j}-tabletSmall {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+    .ts-wrap{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  @for $j from 1 through $column {
+    .col#{$j}-landscape {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+    .land-none{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  @for $j from 1 through $column {
+    .col#{$j}-mobile {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  @for $j from 1 through $column {
+    .col#{$j}-small {
+      width: calc((100% / ($column / $j)) - 3%);
+      margin: 1.5%;
+    }
+  }
+}

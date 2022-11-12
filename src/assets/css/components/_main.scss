@@ -1,0 +1,280 @@
+.title-section{
+    color: $text;
+}
+.paragraph{
+    color: $subtitle;
+}
+.about-wrap{
+    overflow-x: hidden;
+    .about-left{
+        @media screen and (min-width: 1200px) {
+            opacity: 0;
+          }
+    }
+    .about-right{
+        .about-desc{
+            .about-title{
+                @media screen and (min-width: 1200px) {
+                    animation-delay: 1s;
+                    opacity: 0;
+                  }
+            }
+            .p-about{
+                @media screen and (min-width: 1200px) {
+                    animation-delay: 2s;
+                    opacity: 0;
+                  }
+            }
+        }
+        .about-menu{
+            input[type="radio"]{
+                display: none;
+            }
+            .menu-about{
+                @media screen and (min-width: 1200px) {
+                    animation-delay: 3s;
+                    opacity: 0;
+                  }
+            }
+            .tab-content{
+                @media screen and (min-width: 1200px) {
+                    animation-delay: 4s;
+                    opacity: 0;
+                  }
+                .content1,.content2,.content3,.content4{
+                    display: none;
+                    // transition: all .3s;
+                    .tab-item{
+                        .tab-content-title{
+                            color: $subtitle;
+                            cursor: pointer;
+                            span{
+                                font-weight:lighter;
+                            }
+                            &:hover{
+                                color: $primary;
+                            }
+                        }
+                        .tab-content-subtitle{
+                            color: $subtitle;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+            }
+            #skills:checked ~ nav label:nth-child(1),
+            #experience:checked ~ nav label:nth-child(2),
+            #education:checked ~ nav label:nth-child(3),
+            #certification:checked ~ nav label:nth-child(4)
+            {
+                color: $primary;
+                border-bottom: 2px solid $subtitle;
+            }
+            #skills:checked ~ .tab-content .content1,
+            #experience:checked ~ .tab-content .content2,
+            #education:checked ~ .tab-content .content3,
+            #certification:checked ~ .tab-content .content4
+            {
+                display: block;
+            }
+            .about-menu-tab{
+                display: inline-block;
+                font-size: 19.2px;
+                color: $subtitle;
+                font-weight: 500;
+                margin-right: 20px;
+                box-sizing: border-box;
+                transition: all .3s;
+                cursor: pointer;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+    }
+}
+#services{
+    background-color: $bgbody;
+}
+.services-wrap{
+    .section-title{
+        .services-title{
+            @media screen and (min-width: 1200px) {
+                opacity: 0;
+              }
+        }
+        .services-subtitle{
+            @media screen and (min-width: 1200px) {
+                display: inline-block;
+                animation-delay: 1s;
+                opacity: 0;
+              }
+        }
+    }
+    .subtitle-section{
+        color: $subtitle;
+        font-weight:lighter
+    }
+    .services-icon{
+        font-size: 64px;
+        color: $primary;
+        @media screen and (max-width: 600px) {
+            color: $netral;
+        }
+    }
+    h4{
+        font-weight: 200;
+        color: $text;
+        @media screen and (max-width: 600px) {
+            color: $netral;
+        }
+    }
+    p{
+        @media screen and (max-width: 600px) {
+            color: $netral;
+        }
+    }
+}
+#project{
+    overflow-y: hidden;
+}
+.project-wrap{
+    overflow-x: hidden;
+    .section-title-project{
+        .project-title{
+            @media screen and (min-width: 1200px) {
+                opacity: 0;
+              }
+        }
+        .project-subtitle{
+            @media screen and (min-width: 1200px) {
+                display: inline-block;
+                animation-delay: 1s;
+                opacity: 0;
+              }
+        }
+    }
+}
+.project-card{
+    border-radius: 8px;
+    .project-thumbnail{
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        transition: all .3s;
+        border-radius: 8px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .project-image{
+            img{
+                border-radius: 8px;
+            }
+        }
+        .project-content{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            @media screen and (max-width: 1200px) {
+                top: 40%;
+            }
+            @media screen and (max-width: 1080px) {
+                top: 30%;
+            }
+            @media screen and (max-width: 600px) {
+                text-align: center;
+                left: 3%;
+            }
+            .project-item{
+                span{
+                    color: $netral;
+                }
+                h3{
+                    color: $netral;
+                }
+                a{
+                    transition: all .3s;
+                    &:hover{
+                        background-color: $primary;
+                        border: 2px solid $primary;
+                        color: $netral;
+                        transform: translateY(-2%);
+                    }
+                }
+            }
+        }
+    }
+}
+#contact{
+    background-color: $bgbody;
+    overflow-x: hidden;
+}
+.contact-wrap{
+    overflow: hidden;
+    .contact-left{
+        overflow: hidden;
+        .contact-title{
+            .contact-title-text{
+                @media screen and (min-width: 1200px) {
+                    opacity: 0;
+                  }
+            }
+            .contact-subtitle{
+                color: $subtitle;
+                @media screen and (min-width: 1200px) {
+                    animation-delay: 1s;
+                    display: inline-block;
+                    color: $subtitle;
+                    opacity: 0;
+                    
+                  }
+                span{
+                    display: inline-block;
+                    color: $text;
+                    font-weight: 500;
+                }
+            }
+        }
+        .form1, .form2, .form3, .form4{
+            @media screen and (min-width: 1200px) {
+                opacity: 0;
+              }
+        }
+        .form1{
+            @media screen and (min-width: 1200px) {
+                animation-delay: 1s;
+              }
+        }
+        .form2{
+            @media screen and (min-width: 1200px) {
+                animation-delay: 2s;
+              }
+        }
+        .form3{
+            @media screen and (min-width: 1200px) {
+                animation-delay: 3s;
+              }
+        }
+        .form4{
+            @media screen and (min-width: 1200px) {
+                animation-delay: 4s;
+              }
+        }
+        .contact-button{
+            @media screen and (min-width: 1200px) {
+                animation-delay: 5s;
+                opacity: 0;
+              }
+        }
+    }
+    .contact-right{
+        @media screen and (min-width: 1200px) {
+            overflow: hidden;
+            opacity: 0;
+            animation-delay: 2s;
+          }
+    }
+}

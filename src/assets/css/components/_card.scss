@@ -1,0 +1,58 @@
+.card {
+  // box-shadow: 6px 11px 41px -28px #796eb1;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 40px 40px;
+  cursor: pointer;
+  transition: all .3s linear;
+  &:hover{
+    background-image: linear-gradient(135deg,rgba(255,105,0,1) 5%,#f9004d 50%, #ee2c82 100%, #cf2aba 100%);
+    transform: translateY(-3%);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
+    h4{
+      color: $netral;
+    }
+    p{
+      color: $netral;
+    }
+    .services-icon{
+      color: $netral;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    background-image: linear-gradient(90deg,rgba(255,105,0,1) 5%,#f9004d 50%, #ee2c82 100%, #cf2aba 100%);
+  }
+}
+.card-wrap{
+  display: flex;
+}
+.card-body{
+  padding: 20px;
+  color: $secondary;
+  span{
+    font-weight: 500;
+  }
+}
+
+.card1, .card2, .card3{
+  @media screen and (min-width: 1200px) {
+    opacity: 0;
+  }
+}
+.card4, .card5, .card6{
+  @media screen and (min-width: 1200px) {
+    opacity: 0;
+  }
+}
+.card-portfolio1, .card-portfolio2, .card-portfolio3{
+  @media screen and (min-width: 1200px) {
+    opacity: 0;
+  }
+}
+.card-portfolio4, .card-portfolio5, .card-portfolio6{
+  @media screen and (min-width: 1200px) {
+    opacity: 0;
+  }
+}

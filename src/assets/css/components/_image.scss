@@ -1,0 +1,25 @@
+.img-responsive{
+    width: 100%;
+}
+.img-medium{ width: 80%; }
+.img-64{ width: 64px; }
+.img-32{ width: 32px; }
+.img-24{ width: 24px; }
+.img-16{ width: 16px; }
+.img-avatar{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 8px;
+}
+.img-profile{
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 6px 11px 41px -22px #796eb1;
+}
