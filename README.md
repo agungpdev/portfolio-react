@@ -77,7 +77,7 @@ To install this project on your local machine, follow these steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/fadilgemilang/portfolio-react.git
+   git clone https://github.com/agungpdev/portfolio-react.git
    ```
 2. Install NPM packages
    ```sh
@@ -127,9 +127,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Agung perdana - [@fadilgemilang](https://twitter.com/fadilgemilang) - myagungperdana@gmail.com
+Agung perdana - [@agungpdev](https://twitter.com/agungpdev) - myagungperdana@gmail.com
 
-Project Link: [https://github.com/fadilgemilang/portfolio-react](https://github.com/fadilgemilang/portfolio-react)
+Project Link: [https://github.com/agungpdev/portfolio-react](https://github.com/agungpdev/portfolio-react)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
